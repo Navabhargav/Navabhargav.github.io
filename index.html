@@ -2,103 +2,200 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WR Money Exchange Service</title>
+    <title>Nava Bhargav Gedda | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <h1 style="color: #2196F3;">Hi</h1>
+    </div>
 
-    <header>
-        <div class="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <h1>WR  Money Exchange Service</h1>
-    </header>
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Mobile App</a></li>
-            <li><a href="#">Online Account</a></li>
-            <li><a href="#">In Store</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="money-converter">
-            <h2>Money Converter</h2>
-            <div class="converter-form">
-                <div class="input-group">
-                    <label for="amount-from">Amount You Have:</label>
-                    <input type="number" id="amount-from" placeholder="Enter amount">
+    <!-- Content -->
+    <div class="content" id="content">
+        <section id="intro" class="section">
+            <h1 id="name">It's me, <span class="highlight">Nava Bhargav Gedda</span></h1>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I'm an aspiring business analyst, a software developer and data enthusiast, currently pursuing an MSc in Business Analytics. I have a strong passion for solving problems and building efficient solutions.</p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="company-names">
+                    <button class="company-btn" data-target="#hcl-details">HCL Technologies Ltd. </button>
+                    <button class="company-btn" data-target="#further-details">Get Further</button>
                 </div>
-                <div class="input-group">
-                    <label for="amount-to">Amount You Get:</label>
-                    <input type="number" id="amount-to" placeholder="Converted amount" readonly>
+                <div class="company-details" id="hcl-details">
+                    <p>Enhanced Efficiency: Improved operational efficiency by 60% through advanced data analysis and software engineering.</p>
+                    <p>Automated Processes: Streamlined invoice retrieval with custom algorithms, automating 300-500 Syncada portal invoices.</p>
+                    <p>Predictive Models: Developed and managed over 10 predictive models and data pipelines, driving cost savings.</p>
+                    <p>Interactive Dashboards: Created 5+ dashboards using Python and Tableau for strategic insights.</p>
+                    <p>Team Training: Conducted training for 15+ team members, boosting team capabilities.</p>
+                    <p>Risk Management: Implemented risk management strategies, outperforming 15 peers in initial role.</p>
+                    <p>Custom Scripts: Developed 25+ Python scripts for diverse applications.</p>
+                    <p>Data Processing: Reduced data processing timeouts by 20% with a new software system.</p>
+                    <p>Automation Tools: Automated processes for Sony devices, cutting manual time by 30% using “AKIRA” and Django tools.</p>
                 </div>
-                <div class="input-group">
-                    <label for="currency-from">Currency From:</label>
-                    <select id="currency-from">
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="GBP">GBP</option>
-                        <!-- Add currency options here -->
-                    </select>
+                <div class="company-details" id="further-details">
+                    <p>Instruction: Teach mathematics and science to students preparing for college entrance exams, focusing on GCSEs and functional mathematics.</p>
+                    <p>Student Success: Ensure students achieve their academic goals and improve their understanding of key mathematical concepts.</p>
                 </div>
-                <div class="input-group">
-                    <label for="currency-to">Currency To:</label>
-                    <select id="currency-to">
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="GBP">GBP</option>
-                        <!-- Add currency options here -->
-                    </select>
-                </div>
-                <button id="convert-btn">Convert</button>
             </div>
         </section>
 
-    <header>
-        <h1>Money Exchange Service</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Mobile App</a></li>
-            <li><a href="#">Online Account</a></li>
-            <li><a href="#">In Store</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="exchange-options">
-            <h2>Choose Your Exchange Option</h2>
-            <div class="option">
-                <img src="mobile-app-icon.png" alt="Mobile App Icon">
-                <h3>Mobile App</h3>
-                <p>Exchange money conveniently using our mobile app.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="option">
-                <img src="online-account-icon.png" alt="Online Account Icon">
-                <h3>Online Account</h3>
-                <p>Manage your money online and make exchanges with ease.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="option">
-                <img src="in-store-icon.png" alt="In Store Icon">
-                <h3>In Store</h3>
-                <p>Visit one of our physical locations for in-person exchanges.</p>
-                <a href="#">Find a Store</a>
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="school-names">
+                    <button class="school-btn" data-target="#school1-details">Masters</button>
+                    <button class="school-btn" data-target="#school2-details">Bachelors</button>
+                    <button class="school-btn" data-target="#school3-details">11th & 12th</button>
+                    <button class="school-btn" data-target="#school4-details">10th</button>
+                </div>
+                <div class="school-details" id="school1-details">
+                    <h3>UNIVERSITY: Queen mary university of london</h3>
+                    <h4>ACADEMIC EXCELLENCE:</h4>
+                    <p>Expection Distinction in my masters</p>
+                    <p>Ranked in the top 0.1% of students, served as one of the 25 student venture captialists in Queen mary social venture fund (QMSVF)</p>
+                    <p>Interned as student consultant for Queen mary Student union worked directly under CEO Mike wojick.</p>
+                    <p>Won 2nd prize at Entrepreneurship workshop among 15 competitor teams for innovative ideas conducted by QMUL.</p>
+                </div>
+                <div class="school-details" id="school2-details">
+                    <h3>UNIVERSITY: Raghu Engineering college (Affiliated to Jawharlal nehru technological univeristy kakinada)</h3>
+                    <h4>ACADEMIC EXCELLENCE:</h4>
+                    <p>Secured Merit in Bachelors</p>
+                    <P>Vice-president of IEEE hub Visakhapatham bay</P>
+                    <p>Elected class representative for 3 consecutive years</p>
+                    <p>Organiser of a National level fest "Electrika-2k20"</p>
+                    <p>Secured the runner-up position in the coding competition at SPIKES18, the 8th National level Technical Symposium at Andhra University, hosted by Robokart.com and Innovation – cell UMIC, IIT Bombay, competing against 29 other teams.</p>
+
+                </div>
+                <div class="school-details" id="school3-details">
+                    <h3>COLLEGE: Narayana junior college</h3>
+                    <h4>ACADEMIC EXCELLENCE:</h4>
+                    <p>Secured Distinction in pre-university education</p>
+                </div>
+                <div class="school-details" id="school4-details">
+                    <h3>SCHOOL: Pereira English Noble school</h3>
+                    <h4>ACADEMIC EXCELLENCE:</h4>
+                    <p>Secured Distinction in Higher secondary education</p>
+                    <p>Elected class representative for the final year</p>
+                    <p>Secured 15th rank in National level maths olympiad competition</p>
+                    <p>Secured 1st place in Annual Essay writing competition conducted by the school</p>
+                    <p>Secured 1st place in vedic maths quiz competiton for two consecutive years</p>
+                </div>
             </div>
         </section>
-    </main>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skill-group">
+                <button class="skill-btn" data-target="#programming-skills">Programming Languages</button>
+                <div class="skill-details" id="programming-skills">
+                    <p>Python, C, SQL, VBA</p>
+                </div>
+            </div>
+            <div class="skill-group">
+                <button class="skill-btn" data-target="#data-skills">Data management and Analysis Tools</button>
+                <div class="skill-details" id="data-skills">
+                    <p>DBMS & SQL, R-studio, PLC, Excel (including VBA, pivot tables, array functions), Tableau, Power BI, SAS Viya, Gephi</p>
+                </div>
+            </div>
+            <div class="skill-group">
+                <button class="skill-btn" data-target="#ml-skills">Machine Learning models</button>
+                <div class="skill-details" id="ml-skills">
+                    <p>Linear models, KNN, Tree-based models, SVM’s, Neural networks</p>
+                </div>
+            </div>
+            <div class="skill-group">
+                <button class="skill-btn" data-target="#frameworks-skills">Frameworks and Libraries</button>
+                <div class="skill-details" id="frameworks-skills">
+                    <p>TensorFlow, PyTorch, Scikit-Learn, Keras</p>
+                </div>
+            </div>
+            <div class="skill-group">
+                <button class="skill-btn" data-target="#other-tools-skills">Other Tools</button>
+                <div class="skill-details" id="other-tools-skills">
+                    <p>Microsoft Power Automate, Microsoft Office Proficient</p>
+                </div>
+            </div>
+            <div class="skill-group">
+                <button class="skill-btn" data-target="#soft-skills">Soft Skills</button>
+                <div class="skill-details" id="soft-skills">
+                    <p>Strategic Analysis, Debugging, Risk Management and Ability to Work Under Pressure</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Financial visual analytics scoreboard using Bloomberg terminal</h3>
+                <p class="project-details">This project investigates the impact of sentiment analysis and technical indicators on stock price prediction. 
+                    Using data from Bloomberg, sentiment scores were derived from news articles, Twitter, and other sources through NLP.
+                    The study integrates quantitative, technical, and sentiment analysis to predict short-term price movements. 
+                     Key methodologies include classification models, time series analysis (ARIMA, SARIMA, FB Prophet), and regression and deep learning models. 
+                    The findings are presented with a comparative analysis and a financial dashboard, concluding with recommendations for future improvements.</p>
+            </div>
+            <div class="project-card">
+                <h3>Price prediciton of Airbnb in NYC</h3>
+                <p class="project-details">This project aims to optimize Airbnb pricing strategies in NYC using machine learning models. 
+                    By analyzing the "NYC Airbnb" dataset from Kaggle, the study employs various regression models, including XGBoost. 
+                    The project integrates data-driven insights to help hosts adapt to market fluctuations, maximize earnings, and enhance their business performance in the competitive NYC market.</p>
+            </div>
+            <div class="project-card">
+                <h3>Energy auditing through machine learning</h3>
+                <p class="project-details">This project focuses on optimizing energy audits using machine learning. 
+                    By developing and training a system to perform energy audits based on specific inputs, the project aims to enhance energy efficiency and reduce costs in buildings and industries. 
+                    The future goal is to create an app or software for system utilities, enabling efficient energy conservation and data management, ultimately fostering an eco-friendly environment.</p>
+            </div>
+        </section>
+
+        <section id="interests" class="section">
+            <h2>Interests</h2>
+            <div class="interest-card">
+                <h3>Data Visualization and Storytelling</h3>
+                <p class="interest-details">Enjoy creating compelling data visualizations and narratives. 
+                    I also like to play video games on both PC and mobile, which helps me understand user interfaces and engagement, enhancing my ability to create interactive and engaging data stories.</p>
+            </div>
+            <div class="interest-card">
+                <h3>Eco-Friendly and Automation Innovations</h3>
+                <p class="interest-details">Passionate about sustainable living and automation. 
+                    Engage in DIY projects to create energy-efficient gadgets and automated systems, and participate in local environmental initiatives, demonstrating a commitment to sustainability and innovation.</p>
+            </div>
+            <div class="interest-card">
+                <h3>Continuous Learning through Online Courses</h3>
+                <p class="interest-details">Enthusiastic about lifelong learning. 
+                    Frequently enroll in online courses on platforms like Coursera and Udemy to explore new topics and enhance skills, reflecting a proactive approach to personal and professional development.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via LinkedIn or email!</p>
+            <ul class="contact-links">
+                <li><a href="https://linkedin.com/in/nava-bhargav-gedda-4a4a30151/" target="_blank">
+                    <img src="https://e7.pngegg.com/pngimages/991/594/png-clipart-linkedin-corporation-social-media-logo-business-cards-social-media-blue-angle.png" alt="LinkedIn"> LinkedIn
+                </a></li>
+                <li>Email: <a href="mailto:navabhargavg@gmail.com">
+                    <img src="https://w7.pngwing.com/pngs/799/918/png-transparent-mail-google-gmail-google-s-logo-icon-thumbnail.png" alt="Email"> navabhargavg@gmail.com
+                </a></li>
+                <li>Phone: <a href="tel:+1234567890">
+                    <img src="https://i.pinimg.com/564x/11/40/a3/1140a35cd9866ad93beb1f5d08259fff.jpg" alt="Phone"> +44 7741944719
+                </a></li>
+            </ul>
+        </section>
+    </div>
+
     <footer>
-        <p>&copy; 2023 Money Exchange Service</p>
+        <p>&copy; 2020 Nava Bhargav Gedda. All rights reserved.</p>
     </footer>
-
-
-
-    </main>
-    <!-- Footer as before -->
 </body>
 </html>
